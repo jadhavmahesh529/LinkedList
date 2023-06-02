@@ -7,15 +7,24 @@ namespace LinkedList1
         static void Main(string[] args)
         {
             Linkedlist<int> linkedlist = new Linkedlist<int>();
+            //linkedlist.AddNode(70);
+            //linkedlist.AddNode(30);
+            //linkedlist.AddNode(56);
+
+            //linkedlist.Append(56);
+            //linkedlist.Append(30);
+            //linkedlist.Append(70);
+            //linkedlist.PrintList();
+
             linkedlist.AddNode(70);
             linkedlist.AddNode(30);
             linkedlist.AddNode(56);
+           
+            linkedlist.PrintList();
 
-            linkedlist.Append(56);
-            linkedlist.Append(30);
-            linkedlist.Append(70);
+            linkedlist.Pop();
             linkedlist.PrintList();
-            linkedlist.PrintList();
+        
 
         }
     }
