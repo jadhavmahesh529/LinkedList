@@ -10,6 +10,11 @@ namespace LinkedList1
             linkedlist.AddNode(70);
             linkedlist.AddNode(30);
             linkedlist.AddNode(56);
+
+            linkedlist.Append(56);
+            linkedlist.Append(30);
+            linkedlist.Append(70);
+            linkedlist.PrintList();
             linkedlist.PrintList();
 
         }

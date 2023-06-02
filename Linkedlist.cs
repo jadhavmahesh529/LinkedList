@@ -10,11 +10,9 @@ namespace LinkedList1
     {
         public Node<T> head;
         public Node<T> tail;
-
         public void AddNode(T value)
         {
             Node<T> newNode = new Node<T>(value);
-
             if (head == null)
             {
                 head = newNode;
@@ -26,10 +24,24 @@ namespace LinkedList1
                 head = newNode;
             }
         }
+        public void Append(T value)
+        {
+            Node<T> newNode = new Node<T>(value);
+
+            if (head == null)
+            {
+                head = newNode;
+                tail = newNode;
+            }
+            else
+            {
+                tail.next = newNode;
+                tail = newNode;
+            }
+        }
         public void PrintList()
         {
             Node<T> current = head;
-
             while (current != null)
             {
                 Console.Write(current.data + " ");
@@ -37,6 +49,5 @@ namespace LinkedList1
             }
             Console.WriteLine();
         }
-
     }
 }
