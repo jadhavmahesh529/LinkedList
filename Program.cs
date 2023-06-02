@@ -21,11 +21,12 @@ namespace LinkedList1
             linkedlist.AddNode(56);
            
             linkedlist.PrintList();
-
-            linkedlist.Pop();
+            linkedlist.PopLast();
+            //linkedlist.Pop();
             linkedlist.PrintList();
-        
+
 
         }
+       
     }
 }

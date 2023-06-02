@@ -46,6 +46,32 @@ namespace LinkedList1
                 head = head.next;
             }
         }
+        public void PopLast()
+        {
+            if (head == null)
+            {
+
+                return;
+            }
+
+            if (head == tail)
+            {
+
+                head = null;
+                tail = null;
+                return;
+            }
+
+            Node<T> current = head;
+            while (current.next != tail)
+            {
+                current = current.next;
+            }
+
+
+            tail = current;
+            tail.next = null;
+        }
         public void PrintList()
         {
             Node<T> current = head;
