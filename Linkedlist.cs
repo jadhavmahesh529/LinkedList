@@ -72,6 +72,22 @@ namespace LinkedList1
             tail = current;
             tail.next = null;
         }
+        public void Insert(T value1, T value2, T newValue)
+        {
+            Node<T> newNode = new Node<T>(newValue);
+
+            Node<T> current = head;
+            while (current != null)
+            {
+                if (current.data.Equals(value1) && current.next != null && current.next.data.Equals(value2))
+                {
+                    newNode.next = current.next;
+                    current.next = newNode;
+                    break;
+                }
+                current = current.next;
+            }
+        }
         public void PrintList()
         {
             Node<T> current = head;

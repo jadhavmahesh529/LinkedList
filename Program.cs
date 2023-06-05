@@ -23,6 +23,7 @@ namespace LinkedList1
             linkedlist.PrintList();
             linkedlist.PopLast();
             //linkedlist.Pop();
+            linkedlist.Insert(56, 70, 30);
             linkedlist.PrintList();
 
 
