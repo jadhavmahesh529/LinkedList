@@ -16,15 +16,23 @@ namespace LinkedList1
             //linkedlist.Append(70);
             //linkedlist.PrintList();
 
+            //linkedlist.AddNode(70);
+            //linkedlist.AddNode(30);
+            //linkedlist.AddNode(56);
+
+            //linkedlist.PrintList();
+            //linkedlist.PopLast();
+            //linkedlist.Pop();
+            //linkedlist.Insert(56, 70, 30);
+            //linkedlist.PrintList();
             linkedlist.AddNode(70);
             linkedlist.AddNode(30);
             linkedlist.AddNode(56);
-           
             linkedlist.PrintList();
             linkedlist.PopLast();
-            //linkedlist.Pop();
-            linkedlist.Insert(56, 70, 30);
+          
             linkedlist.PrintList();
+            Console.WriteLine(linkedlist.Search(30));
 
 
         }
