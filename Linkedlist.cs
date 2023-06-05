@@ -123,6 +123,44 @@ namespace LinkedList1
                 current = current.next;
             }
         }
+        public void Delete(T value)
+        {
+            if (head == null)
+            {
+                return;
+            }
+
+            if (head.data.Equals(value))
+            {
+                head = head.next;
+                return;
+            }
+
+            Node<T> current = head;
+            Node<T> previous = null;
+            while (current != null)
+            {
+                if (current.data.Equals(value))
+                {
+                    previous.next = current.next;
+                    return;
+                }
+                previous = current;
+                current = current.next;
+            }
+        }
+        public int Size()
+        {
+            Node<T> current = head;
+            int size = 0;
+            while (current != null)
+            {
+                size++;
+                current = current.next;
+            }
+            return size;
+        }
+
         public void PrintList()
         {
             Node<T> current = head;
