@@ -103,6 +103,26 @@ namespace LinkedList1
 
             return false;
         }
+        public void InsertAfter(T valueToFind, T valueToInsert)
+        {
+            Node<T> newNode = new Node<T>(valueToInsert);
+
+            Node<T> current = head;
+            while (current != null)
+            {
+                if (current.data.Equals(valueToFind))
+                {
+                    newNode.next = current.next;
+                    current.next = newNode;
+                    if (current == tail)
+                    {
+                        tail = newNode;
+                    }
+                    break;
+                }
+                current = current.next;
+            }
+        }
         public void PrintList()
         {
             Node<T> current = head;

@@ -33,7 +33,10 @@ namespace LinkedList1
           
             linkedlist.PrintList();
             Console.WriteLine(linkedlist.Search(30));
-
+            int valueToFind = 30;
+            int valueToInsert = 40;
+            linkedlist.InsertAfter(valueToFind, valueToInsert);
+            linkedlist.PrintList();
 
         }
        
